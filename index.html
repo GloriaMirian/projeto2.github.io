@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head>
+<h1>Formulário</h1>
+<br>
+  <br>
+  <body>
+    <form>
+      <div id="area">
+      <form id="Dados pessoais" autocomplete="off"> 
+        <form action="/action_page.php">
+        <fieldset>
+      <style>
+        fieldset {
+          width: 50%;
+          height:30%;
+        }
+        </style>
+    <legend>Dados pessoais</legend>
+      <label for="fname">Nome:</label>
+      <input type="text" id="fname" name="fname"size="80"><br></br>
+      <label for="dnascimento">Data de nascimento:</label>
+      <input type="text" id="lname" name="lname" value="" ><br><br>
+      <label for="endereço">Endereço:</label>
+      <input type="text" id="endereço" name="endereço" value="" size="80"><br>
+      <label for="bairro" id="bairro">Bairro:</label>
+      <input type="text" id="bairro" name="bairro" value="" size="30">
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" value="" size="30"><br></br>
+      <label for="cep">CEP:</label>
+      <input type="text" id="cep" name="cep" value="" size="15">
+      <label for="estado">Estado:</label>
+        <select name="estado" id="estado">
+          <option value="ceará">Ceará</option>
+          <option value="natal">Natal</option>
+          <option value="pernambuco">Pernambuco</option>
+          <option value="piaui">Piaui</option>
+        </select>
+        <br><br>
+      </form>
+    </fieldset>
+      <br>
+      <form>
+      <div id="area">
+        <form id="dados pessoais" autocomplete="off">
+      <fieldset> 
+      <legend>Dados profissionais</legend>
+      <h4>Natureza do cargo</h4>
+      <input type="radio" id="gerencia" name="função" value="Gerência" ></input>
+      <label for="gerencia">Gerência</label>
+      <input type="radio" id="financeiro" name="função" value="Financeiro" ></input>
+      <label for="gerencia">Financeiro</label>
+      <input type="radio" id="recepção" name="função" value="Recepção" ></input>
+      <label for="recepção">Recepção</label>
+      <input type="radio" id="administrativo" name="função" value="Administrativo" ></input>
+      <label for="administrativo">Administrativo</label>
+      <input type="radio" id="juridico" name="função" value="Jurídico" ></input>
+      <label for="juridico">Jurídico</label><br></br>
+      <h4>Área de interesse</h4>
+      <input type="checkbox" id="cargo" name="computação" value="Computação">
+      <label for="computação">Computação</label>
+      <input type="checkbox" id="cargo" name="química" value="Química">
+      <label for="quimica">Química</label>
+      <input type="checkbox" id="cargo" name="meio ambiente" value="Meio Ambiente">
+      <label for="meio ambiente">Meio Ambiente</label>
+      <input type="checkbox" id="cargo" name="engenharia" value="Engenharia">
+      <label for="engenharia">Engenharia</label>
+      <input type="checkbox" id="cargo" name="matemática" value="Matemática">
+      <label for="matemática">Matemática</label><br></br>
+      <h3>Mini-curriculo:</h3>
+      <textarea name="message" rows="10" cols="60"></textarea><br></br>
+      </fieldset><br>
+    <input type="submit" onclick="alert('Vazio')" value="Enviar">
+    <input type="submit" onclick="alert('Vazio')" value="Limpar">
+    
+</body>
+</html>
